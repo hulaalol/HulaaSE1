@@ -8,7 +8,7 @@ public class Account {
 
   private static double         
   interestRate = 1.5,           // applied to positive balances
-  defaultInterestRate = 15.;    // applied to negative balances
+  NegativeInterestRate = 15.;    // applied to negative balances
 
   private double balance;       // Balances apply per-account thus in contrast
                                 // "static" must not appear here.
@@ -61,31 +61,22 @@ public class Account {
   public static void setInterestRate(double interestRate) {  
     Account.interestRate = interestRate;                         
   }
+  
+  public static void setNegativeInterestRate(double NegativeInterestRate) {  
+	    Account.NegativeInterestRate = NegativeInterestRate;                         
+	  }
   /**
    * @return The current global interest rate
    */
+  public static double getNegativeInterestRate() {
+	    return NegativeInterestRate;
+	  }
+  
+  
   public static double getInterestRate() {
     return interestRate;
   }
   
-  /**
-   * @return
-   *     the current default interest rate value.
-   */
-  public static double getDefaultInterestRate() {
-    return defaultInterestRate;
-  }
-
-  /**
-   * This interest rate will be applied to negative balances. In contrast
-   * {{@link #setInterestRate(double)} will handle positive balance values.
-   * 
-   * @param defaultInterestRate
-   *                         the desired default interest rate value.
-   */
-  public static void setDefaultInterestRate(double defaultInterestRate) {
-    Account.defaultInterestRate = defaultInterestRate;
-  }
 
   /**
    * <p>Adding the annual interest to the current balance according to:</p>
@@ -121,7 +112,7 @@ public class Account {
     if (0 < balance) {
       balance = balance * (1 + interestRate / 100);
     } else if (balance < 0){
-      balance = balance * (1 + defaultInterestRate / 100);
+      balance = balance * (1 + NegativeInterestRate / 100);
     }
   }
 
@@ -166,7 +157,7 @@ public class Account {
     if (0 < balance) {
       balance = balance * Math.pow((1 + interestRate / 100), years) ;
     } else if (balance < 0){
-      balance = balance * Math.pow((1 + defaultInterestRate / 100), years) ;
+      balance = balance * Math.pow((1 + NegativeInterestRate / 100), years) ;
     }
   }
 

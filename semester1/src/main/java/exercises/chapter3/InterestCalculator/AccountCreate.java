@@ -24,8 +24,8 @@ public class AccountCreate {
     
     
     Account.setInterestRate(15.);
-    account.setBalance(-1000.);           // You owe me something!
-    account.applyInterest(3);
+    account.setBalance(-100.);           // You owe me something!
+    account.applyInterest(20);
 
     System.out.println("balance:" + account.getBalance());  // Display account's balance again
   }
