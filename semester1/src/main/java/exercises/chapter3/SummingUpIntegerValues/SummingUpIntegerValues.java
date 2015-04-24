@@ -1,9 +1,7 @@
 package exercises.chapter3.SummingUpIntegerValues;
 
-/**
- * Hello world!
- *
- */
+// neuer Github Kommentar für testzwecke!
+
 public class SummingUpIntegerValues 
 {
 

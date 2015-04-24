@@ -9,7 +9,7 @@ public class Account {
   private static double         
   interestRate = 1.5,           // applied to positive balances
   NegativeInterestRate = 15.;    // applied to negative balances
-  								//hello can u read this???
+  							
 
   private double balance;       // Balances apply per-account thus in contrast
                                 // "static" must not appear here.
