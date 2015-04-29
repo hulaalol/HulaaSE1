@@ -24,7 +24,7 @@ public class Math {
      */
     
     
-    private static long getGCD(long a, long b)
+    public static long getGCD(long a, long b)
     {
 //    	if (a > b)
 //    	{
@@ -68,12 +68,12 @@ public class Math {
     }
     
     
-    public static void main( String[] args ) {
-        System.out.println(getGCD(188,0));
-        
-        log.debug("With respect to logging you may want to configure file ");
-        log.debug("'src/main/resources/log4j2.xml' to suit your needs.");
-        log.debug("This config file 'log4j2.xml' will result in 'A1.log'");
-        log.debug("file containing logging output as well.");
-    }
+//    public static void main( String[] args ) {
+//        System.out.println(getGCD(188,0));
+//        
+//        log.debug("With respect to logging you may want to configure file ");
+//        log.debug("'src/main/resources/log4j2.xml' to suit your needs.");
+//        log.debug("This config file 'log4j2.xml' will result in 'A1.log'");
+//        log.debug("file containing logging output as well.");
+//    }
 }
