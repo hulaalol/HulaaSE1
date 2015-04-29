@@ -1,6 +1,7 @@
 package de.hdm_stuttgart.mi.sd1.fraction;
 
 import de.hdm_stuttgart.mi.sd1.fraction.Fraction;
+
 import java.util.Scanner;
 
 public class Driver {

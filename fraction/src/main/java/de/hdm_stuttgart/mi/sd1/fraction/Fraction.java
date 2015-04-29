@@ -1,5 +1,4 @@
 package de.hdm_stuttgart.mi.sd1.fraction;
-import de.hdm_stuttgart.mi.sd1.gcd.Math;
 
 
 public class Fraction {
