@@ -77,6 +77,28 @@ public class Math {
    * @param x
    * @return
    */
+  
+  
+  
+//  public static double exp(double x) {
+//	    double currentTerm = 1.,  // the first (i == 0) term x^0/0!
+//	        sum = currentTerm;    // initialize to the power series' first term
+//	    
+//	    for (int i = 1; i <= seriesLimit; i++) {  // i = 0 has already been completed.
+//	      currentTerm *= x / i;
+//	      sum += currentTerm;
+//	    }
+//	    return sum;
+//	  }
+//  
+  
+  
+  
+  
+  
+  
+  
+  
   public static double exp(double x) {
 	  
 	  double glied = 0;

@@ -23,7 +23,7 @@ public class RandomNumbers implements NonsenseGenerator{
 		int[] rndArray = new int[4];
 		
 		// adjective
-	    int ENDadjective = NonsenseGenerator.ADJECTIVES.length;
+	    int ENDadjective = NonsenseGenerator.ADJECTIVES.length-1;
 	    Random arandom = new Random();
 	    rndArray[0] = showRandomInteger(start, ENDadjective, arandom);
 		
@@ -34,7 +34,7 @@ public class RandomNumbers implements NonsenseGenerator{
 	    for (int i = 2; i>0; i--)
 	    {
 		int STARTthing = 0;
-	    int ENDthing = NonsenseGenerator.THINGS.length;
+	    int ENDthing = NonsenseGenerator.THINGS.length-1;
 	    Random brandom = new Random();
 	    
 	    rndArray[k] = showRandomInteger(start, ENDthing, brandom);
@@ -43,7 +43,7 @@ public class RandomNumbers implements NonsenseGenerator{
 	    
 		// verb
 		int STARTverb = 0;
-	    int ENDverb = NonsenseGenerator.VERBS.length;
+	    int ENDverb = NonsenseGenerator.VERBS.length-1;
 	    Random crandom = new Random();
 	    rndArray[2] = showRandomInteger(start, ENDverb, crandom);
 	    

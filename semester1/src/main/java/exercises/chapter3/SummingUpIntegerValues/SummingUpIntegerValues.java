@@ -18,6 +18,6 @@ public class SummingUpIntegerValues
 	
     public static void main( String[] args )
     {
-        System.out.println( getSum(150) );
+        System.out.println( getSum(160) );
     }
 }
