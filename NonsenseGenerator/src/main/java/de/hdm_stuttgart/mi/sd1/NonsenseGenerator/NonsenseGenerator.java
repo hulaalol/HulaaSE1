@@ -1,8 +1,5 @@
 package de.hdm_stuttgart.mi.sd1.NonsenseGenerator;
 
-import java.util.Random;
-
-
 public interface NonsenseGenerator{
 	
 	 static final String[] ADJECTIVES = {
@@ -22,7 +19,7 @@ public interface NonsenseGenerator{
 	      "pencil",     "phone",   "glass",  "planet",  "potato",   // Index 34
 	      "engineer",   "salad",   "shoe",   "slipper", "soup",     // Index 39
 	      "building",   "star",    "steak",  "table",   "terminal", // Index 44
-	      "treehouse",  "truck",   "cake",   "window" };            // Index 48
+	      "treehouse",  "truck",   "cake",   "window", "cock", "lol", "lel", "schesch", "hurensawn", "lecker", "Kanacke", "Harrison", "Fleischbällchen", "Spaghetti", "Peter", "Lustig"};            // Index 48
 
 	   static final String[] VERBS = {
 	      "plans cease fire against",  "expected to sell", "expected to buy", "speaks to", "leases",    // Index 4
@@ -32,10 +29,9 @@ public interface NonsenseGenerator{
 	      "reported to have met with", "now manages",      "starts war with", "accuses",   "becomes" ,  // Index 24
 	      "works together with" };                                                                      // Index 25
     
+	  
 
-	   public static String generateSentence(int[] inputArray) {
-		return null; 
-		}
+	   public String generateSentence(int[] inputArray);
 			
 		
 	   

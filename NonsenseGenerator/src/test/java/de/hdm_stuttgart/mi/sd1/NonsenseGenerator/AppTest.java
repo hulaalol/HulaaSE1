@@ -18,8 +18,8 @@ public class AppTest {
     @Test
     public void testApp() {
     	   Assert.assertEquals("The gray cat threatens a dog.", 
-    		         NonsenseGenerator.generateSentence(test1));
+    		         new PredictableSequenceGenerator(test1).generateSentence(test1));
     		   Assert.assertEquals("The friendly lawyer meets with a physicist.", 
-    				   NonsenseGenerator.generateSentence(test2));
+    				   new PredictableSequenceGenerator(test2).generateSentence(test2));
     }
 }
